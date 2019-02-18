@@ -5,7 +5,6 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-  pointer-events: none;
 }
 
 .App-header {
@@ -30,4 +29,138 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#root>div {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 侧栏nav*/
+
+.nav {
+    width: 0;
+    background: #ffff;
+    border: 1px solid;
+    transform: translate(-300px, 0);
+    z-index: 1000;
+
+}
+
+.navOpen {
+    transition: width .35s linear;
+    background-color: white;
+    width: 500px;
+    transform: translate(0, 0);
+    z-index: 1000;
+}
+
+h2 {
+    color: black;
+}
+
+h2,
+#searchBox {
+    text-align: center;
+}
+
+#searchBox {
+    margin: 50px 5px;
+}
+
+input {
+    width: 70%;
+    height: 35px;
+}
+
+#filter {
+    padding-left: 20px;
+}
+
+.filter {
+    width: 20%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: gold;
+}
+
+
+/* 地图 */
+.map {
+    height: 94%;
+    position: absolute;
+    width: 100%;
+}
+
+/* 汉堡按钮 */
+#menu {
+    width: 100%;
+    height: 6%;
+    background-color: royalblue;
+    position: relative;
+}
+
+/*!* 汉堡按钮 *!*/
+/*#menutext {*/
+    /*font-size: 14px;*/
+/*}*/
+
+.navbar-toggle {
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: white;
+    height: 80%;
+    position: relative;
+    top: 50%; /*偏移*/
+    transform: translateY(-50%);
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+li {
+    list-style-type: none;
+    height: 30px;
+}
+
+#locList {
+    text-align: center;
 }
