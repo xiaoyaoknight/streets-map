@@ -15,7 +15,7 @@ class App extends Component {
 
     componentDidMount() {
         this.setState({
-        location: locations
+            location: locations
         });
     }
 
